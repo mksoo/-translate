@@ -1,0 +1,88 @@
+body {
+    font-family: '나눔고딕', sans-serif, Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+header {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: none;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.header-right i {
+    font-size: 24px; /* Font Awesome 아이콘 크기 조정 */
+    cursor: pointer;
+
+}
+
+.header-right button, .header-right i {
+    margin-left: 10px;
+}
+
+.translation-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.source-section, .target-section {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* label 태그를 왼쪽 정렬 */
+}
+
+.text-box {
+    min-height: 150px;
+}
+
+.translation-limit {
+    align-self: flex-end; /* 글자수 제한을 오른쪽에 정렬 */
+    font-size: 0.9em; /* 글자수 제한 텍스트 크기 조정 */
+    color: #6c757d; /* 색상 조정 */
+}
+
+
+.translation-limit {
+    text-align: left;
+    margin-top: 5px;
+}
+
+.fas.fa-copy {
+    color: #6c757d; /* 원하는 색상으로 변경 */
+    font-size: 1.5em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    margin-top: 20px;
+}
