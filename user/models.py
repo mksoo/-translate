@@ -1,13 +1,9 @@
 from django.db import models
-
-
-class User(models.Model):
-    username = models.CharField(max_length=50)
-    password = models.CharField(max_length=50)
+from django.contrib.auth.models import User
 
 
 class UserProfile(models.Model):
-    userid = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=50)
     email = models.EmailField(max_length=50)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -17,3 +13,4 @@ class UserProfile(models.Model):
 
     def __str__(self):
         return self.name
+
